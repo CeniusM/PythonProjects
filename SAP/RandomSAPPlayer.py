@@ -33,12 +33,13 @@ poses.append({328,1000})
 # end turn
 endTurnPos = {1500, 1000}
 
-while(True):
-    print(win32api.GetCursorPos())
+# while(True):
+#     print(win32api.GetCursorPos())
 for _ in range(10):
     x,y = poses[Rand(0, poses.__len__() - 1)]
     Click(x,y)
-Click(endTurnPos[0], endTurnPos[1])
+# Click(endTurnPos[0], endTurnPos[1])
+Click(0,0)
 
 Click(poses[0][0], poses[0][1])
 
